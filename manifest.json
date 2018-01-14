@@ -6,10 +6,9 @@
   "browser_action": {
     "default_icon": "icon.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*"],
-      "css": ["custom.css"]
-    }
-  ]
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "exclude_matches": ["https://rapidgator.net/*", "https://k2s.cc/*"],
+    "css": ["custom.css"]
+  }]
 }
