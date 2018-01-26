@@ -8,7 +8,14 @@
   },
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*"],
-    "exclude_matches": ["https://rapidgator.net/*", "https://k2s.cc/*"],
+    "exclude_matches": [
+      "https://rapidgator.net/*",
+      "https://k2s.cc/*",
+      "https://*.google.com/*",
+      "https://*.coursera.org/*",
+      "https://*.qwiklabs.com/*",
+      "https://*.amazonaws.com/*"
+    ],
     "css": ["custom.css"]
   }]
 }
