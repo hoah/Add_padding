@@ -7,7 +7,11 @@
     "default_icon": "icon.png"
   },
   "content_scripts": [{
-    "matches": ["https://*.pixhost.org/*", "https://*.postimg.org/*"],
+    "matches": [
+      "https://*.pixhost.org/*",
+      "https://*.pixhost.to/*",
+      "https://*.postimg.org/*"
+    ],
     "exclude_matches": [
       "https://rapidgator.net/*",
       "https://k2s.cc/*",
